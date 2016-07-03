@@ -1,4 +1,4 @@
-package com.github.elizabetht.controller;
+package com.livedots.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.github.elizabetht.model.Student;
-import com.github.elizabetht.model.StudentLogin;
-import com.github.elizabetht.service.StudentService;
+import com.livedots.model.Student;
+import com.livedots.model.StudentLogin;
+import com.livedots.service.StudentService;
 
 @Controller
 @SessionAttributes("student")

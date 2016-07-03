@@ -11,7 +11,7 @@
 
 <mvc:annotation-driven />
 
-<context:component-scan base-package="com.github.elizabetht" />
+<context:component-scan base-package="com.livedots" />
 
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/jsp/" />
@@ -24,15 +24,15 @@
 
 <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-	<property name="url" value="jdbc:mysql://mydbinstance.cavpckqdd90v.us-east-1.rds.amazonaws.com:3306/studentEnrollment?autoReconnect=true&amp;createDatabaseIfNotExist=true&amp;" />
-	<property name="username" value="awsuser" />
-	<property name="password" value="password" />
+	<property name="url" value="jdbc:mysql://localhost/longword1" />
+	<property name="username" value="longword1" />
+	<property name="password" value="0WTJ9a1UI1" />
 </bean>
 
 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 	<property name="dataSource" ref="dataSource" />
-	<property name="typeAliasesPackage" value="com.github.elizabetht.model"/>
-	<property name="mapperLocations" value="classpath*:com/github/elizabetht/mappers/*.xml" />
+	<property name="typeAliasesPackage" value="com.livedots.model"/>
+	<property name="mapperLocations" value="classpath*:com/livedots/mappers/*.xml" />
 </bean>
 
 <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
@@ -40,7 +40,7 @@
 </bean>
 
 <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-	<property name="basePackage" value="com.github.elizabetht.mappers" />
+	<property name="basePackage" value="com.livedots.mappers" />
 </bean>
 
 <tx:annotation-driven transaction-manager="transactionManager" />

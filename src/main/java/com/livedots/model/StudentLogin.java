@@ -1,4 +1,4 @@
-package com.github.elizabetht.model;
+package com.livedots.model;
 
 
 public class StudentLogin {

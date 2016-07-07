@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Login Success</title>
 <link href="assets/css/bootstrap-united.css" rel="stylesheet" />
 
@@ -33,7 +33,7 @@
 				<input type="text" class="form-control" placeholder="Search">
 			</form>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/StudentEnrollmentWithMyBatis">Home</a></li>
+				<li><a href="/MyBatisSpringExample">Home</a></li>
 				<li><a href="signup.html">Signup</a></li>
 				<li class="active"><a href="login.html">Login</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -57,7 +57,7 @@
 		</div>
 		<div class="panel-body">
 			<div class="alert alert-dismissable alert-success">
-				<button type="button" class="close" data-dismiss="alert">×</button>
+				<button type="button" class="close" data-dismiss="alert">Ã—</button>
 				<strong>Well done!</strong> You successfully logged-into the system.
 				Now you can explore the complete features!
 			</div>
